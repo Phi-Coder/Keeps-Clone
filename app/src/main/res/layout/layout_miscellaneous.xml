@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_miscellaneous"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_miscellaneous"
+    android:orientation="vertical"
+    app:behavior_peekHeight='40dp'
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <TextView
+        android:id="@+id/textMiscellaneous"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Miscellaneous"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutNoteColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewColor1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/background_note_color_1" />
+
+            <ImageView
+                android:id="@+id/iamgeColor1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_done" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewColor2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/background_note_color_2" />
+
+            <ImageView
+                android:id="@+id/iamgeColor2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="10dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewColor3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/background_note_color_3" />
+
+            <ImageView
+                android:id="@+id/iamgeColor3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="10dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewColor4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/background_note_color_4" />
+
+            <ImageView
+                android:id="@+id/iamgeColor4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="10dp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:text="Pick Color"/>
+
+    </LinearLayout>
+
+</LinearLayout>
